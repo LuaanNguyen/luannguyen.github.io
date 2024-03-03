@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luan Nguyen</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luan Nguyen</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.png"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/luan-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Luan Nguyen</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/luan-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
+            <p class="title">Full-stack developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Luan Nguyen</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Full-stack developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >luanthiennguyen2003@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+12133522795" class="contact-link"
+                  >+1 (917) 657-4242</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">luanthiennguyen2003@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+1 (917) 657-4242</a>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
@@ -107,208 +110,191 @@
 
           </li> -->
 
-          <li class="contact-item">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+                <address>Tempe, AZ</address>
+              </div>
+            </li>
+          </ul>
 
-              <address>Tempe, AZ</address>
-            </div>
+          <div class="separator"></div>
 
-          </li>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/LuaanNguyen" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
 
-        </ul>
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/luan-nguyen-8640aa278/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-        <div class="separator"></div>
+            <li class="social-item">
+              <a href="https://www.instagram.com/luannuen/" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/LuaanNguyen" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/luan-nguyen-8640aa278/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/luannuen/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              I'm full-stack developer studying Computer Science at Arizona
+              State University. I enjoy turning complex problems into simple,
+              beautiful and intuitive designs.
+            </p>
 
-        <section class="about-text">
-          <p>
-            I'm full-stack developer studying Computer Science at Arizona State University.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
+            <!-- <p>
             My job is to build your website so that it is functional and user-friendly but at the same time attractive.
             Moreover, I
             add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
             across your
             message and identity in the most creative way. I created web design for many famous brand companies.
-          </p>
-        </section>
+          </p> -->
+          </section>
 
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing/Learning</h3>
 
-          <h3 class="h3 service-title">What i'm doing/Learning</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UX/UI design</h4>
 
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    The most modern and high-quality design.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/ai-app.svg"
+                    alt="camera icon"
+                    width="70"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Artificial Intelligence</h4>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Immersing into the world of AI and exploit its potential.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">iOS Mobile apps</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    Professional development of applications for iOS.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I enjoy taking photos here and there.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -406,57 +392,55 @@
 
         </section> -->
 
-
-<!--         
+          <!--         
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-          </section>
+                <time datetime="2021-06-14">14 June, 2021</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!-- <!--
+          <!-- <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
 
           <h3 class="h3 clients-title">Clients</h3>
 
@@ -501,66 +485,60 @@
           </ul>
 
         </section> -->
+        </article>
+        -->
 
-      </article> -->
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Arizona State University
+                  <em class="timeline-text">Tempe, Arizona</em>
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2022 — Present</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Arizona State University <em class="timeline-text">Tempe, Arizona</em></h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                <!-- GPA: 3.81 <br>
+                <p class="timeline-text">
+                  <!-- GPA: 3.81 <br>
                 Ira A. Fulton Schools of Engineering dean’s list: Fall 2022, Fall 2023 <br> -->
+                </p>
+              </li>
 
-              </p>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  The Doane Stuart School
+                  <em class="timeline-text">Albany, New York</em>
+                </h4>
 
-            </li>
+                <span>2019 — 2022</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">The Doane Stuart School <em class="timeline-text">Albany, New York</em></h4>
-
-              <span>2019 — 2022</span>
-
-              <p class="timeline-text">
-                <!-- GPA: 3.84 <br>
+                <p class="timeline-text">
+                  <!-- GPA: 3.84 <br>
                 - Captain | Student Government <br>
                 - Vice President | Chess Club <br>
                 - Vice President | Guitar Essemble <br>
                 - Captain | Varsity Soccer <br> -->
-              </p>
+                </p>
+              </li>
 
-            </li>
-
-            <!-- <li class="timeline-item">
+              <!-- <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Bishop Maginn High School </h4>
 
@@ -573,182 +551,168 @@
               </p>
 
             </li> -->
+            </ol>
+          </section>
 
-          </ol>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Professional Experience</h3>
             </div>
 
-            <h3 class="h3">Professional Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer Lead <em class="timeline-text">EPICS </em>
+                </h4>
 
-          <ol class="timeline-list">
+                <span>January 2024 — Present</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Engineer Lead <em class="timeline-text">EPICS </em></h4>
-
-              <span>January 2024 — Present</span>
-
-              <p class="timeline-text">
-                <!-- •	Led the implementation of NoSQL databases using MongoDB, leveraging expertise in database design and management to create easy-to-use online database for the community partners. <br>
+                <p class="timeline-text">
+                  <!-- •	Led the implementation of NoSQL databases using MongoDB, leveraging expertise in database design and management to create easy-to-use online database for the community partners. <br>
                 •	Coordinated the research and design team into the development of front-end prototypes to access the database using React.js. <br>
                 •	Partnered with the Vietnam Agriculture project, creating a way of storing raw data. -->
-              </p>
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Development Intern
+                  <em class="timeline-text">The Global Tech Experience</em>
+                </h4>
 
-            <li class="timeline-item">
+                <span>August 2023 — December 2023</span>
 
-              <h4 class="h4 timeline-item-title">Web Development Intern <em class="timeline-text">The Global Tech Experience</em></h4>
-
-              <span>August 2023 — December 2023</span>
-
-              <p class="timeline-text">
-                <!-- ●	Developed, enhanced, and redesigned dynamic websites, games, calculators, and various interactive web experiences using HTML, CSS, and Bootstrap. <br>
+                <p class="timeline-text">
+                  <!-- ●	Developed, enhanced, and redesigned dynamic websites, games, calculators, and various interactive web experiences using HTML, CSS, and Bootstrap. <br>
                 ●	Conducted experiments with UX/UI research and prototyped digital products. Integrated third-party API into web applications for new functionality. <br>
                 ●	Collaborated with a global team to accomplish diverse technical tasks, increasing projects’ efficiency up to 50%. <br> -->
+                </p>
+              </li>
 
-              </p>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  UX/ UI Development Trainee
+                  <em class="timeline-text">Publicis Sapient</em>
+                </h4>
 
-            </li>
+                <span>August 2023 — December 2023</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">UX/ UI Development Trainee <em class="timeline-text">Publicis Sapient</em></h4>
-
-              <span>August 2023 — December 2023</span>
-
-              <p class="timeline-text">
-                <!-- ●	Conducted comprehensive market research on hospitality/rental websites to identify key product features for the Marriott Consulting Project. <br>
+                <p class="timeline-text">
+                  <!-- ●	Conducted comprehensive market research on hospitality/rental websites to identify key product features for the Marriott Consulting Project. <br>
                 ●	Analyzed quantitative user research data, gaining insights to guide future product development. <br>
                 ●	Established an interactive prototype to implement to the Marriott’s website for project team. <br> -->
-                
-              </p>
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            </li>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Community Experience</h3>
             </div>
 
-            <h3 class="h3">Community Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Founder / CEO <em class="timeline-text">Web Devils</em>
+                </h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
+                <span>Febuary 2024 — Present</span>
 
-              <h4 class="h4 timeline-item-title">Founder / CEO <em class="timeline-text">Web Devils</em></h4>
-
-              <span>Febuary 2024 — Present</span>
-
-              <p class="timeline-text">
-                <!-- •	Organize and schedule club events monthly to promote Vietnamese culture and social connection
+                <p class="timeline-text">
+                  <!-- •	Organize and schedule club events monthly to promote Vietnamese culture and social connection
                 with over 200 attendances. <br>
                 •	 Advertise the club by communicate with students during various social events, gaining over 200
                 new members for the last academic year. <br>
                 •	Negotiate with other organizations to collaborate and establish sponsorships with nearby businesses,
                 gain over $1000 of sponsorship in the 2022-2023 academic year. <br> -->
-              </p>
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Vice President
+                  <em class="timeline-text">Vietnamese Student Union at ASU</em>
+                </h4>
 
-            <li class="timeline-item">
+                <span>January 2024 — Present</span>
 
-              <h4 class="h4 timeline-item-title">Vice President <em class="timeline-text">Vietnamese Student Union at ASU</em></h4>
-
-              <span>January 2024 — Present</span>
-
-              <p class="timeline-text">
-                <!-- •	Organize and schedule club events monthly to promote Vietnamese culture and social connection
+                <p class="timeline-text">
+                  <!-- •	Organize and schedule club events monthly to promote Vietnamese culture and social connection
                 with over 200 attendances. <br>
                 •	 Advertise the club by communicate with students during various social events, gaining over 200
                 new members for the last academic year. <br>
                 •	Negotiate with other organizations to collaborate and establish sponsorships with nearby businesses,
                 gain over $1000 of sponsorship in the 2022-2023 academic year. <br> -->
-              </p>
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Advocacy Officer
+                  <em class="timeline-text"
+                    >Coalition of International Student at ASU</em
+                  >
+                </h4>
 
-            <li class="timeline-item">
+                <span>January 2024 — Present</span>
 
-              <h4 class="h4 timeline-item-title">Advocacy Officer <em class="timeline-text">Coalition of International Student at ASU</em></h4>
+                <p class="timeline-text"></p>
+              </li>
 
-              <span>January 2024 — Present</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Volunteer
+                  <em class="timeline-text"> Global Career Network</em>
+                </h4>
 
-              <p class="timeline-text">
-  
-                
-              </p>
+                <span>January 2024 — Present</span>
 
-            </li>
+                <p class="timeline-text"></p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Secretary
+                  <em class="timeline-text">Vietnamese Student Union at ASU</em>
+                </h4>
 
-              <h4 class="h4 timeline-item-title">Volunteer <em class="timeline-text"> Global Career Network</em></h4>
+                <span>August 2023 — December 2023</span>
 
-              <span>January 2024 — Present</span>
-
-              <p class="timeline-text">
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Secretary <em class="timeline-text">Vietnamese Student Union at ASU</em></h4>
-
-              <span>August 2023 — December 2023</span>
-
-              <p class="timeline-text">
-                <!-- •	Arrange room reservations and meetings to establish connections with multiple organizations within
+                <p class="timeline-text">
+                  <!-- •	Arrange room reservations and meetings to establish connections with multiple organizations within
                 the ASU communities, connecting with more than 10 ASU organizations. <br>
                 • Compile monthly newspapers to inform the community of upcoming events, gaining 40% more online participation. <br>
                 • Consult with president, event coordinator, and other members of the organization. Implement
                 interpersonal skills for handling internal stability of the club. <br> -->
+                </p>
+              </li>
 
-              </p>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Photographer
+                  <em class="timeline-text">Vietnamese Student Union at ASU</em>
+                </h4>
 
-            </li>
+                <span>August 2023 — December 2023</span>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Photographer <em class="timeline-text">Vietnamese Student Union at ASU</em></h4>
-
-              <span>August 2023 — December 2023</span>
-
-              <p class="timeline-text">
-                <!-- • 	Capture social events, team meetings, and activities for social media platforms and websites with over 200 photos and videos. <br>
+                <p class="timeline-text">
+                  <!-- • 	Capture social events, team meetings, and activities for social media platforms and websites with over 200 photos and videos. <br>
                 •  Provide inputs for social media manager and help develop strategies to increase engagements on online platforms. <br> -->
-                
-              </p>
+                </p>
+              </li>
+            </ol>
+          </section>
 
-            </li>
-
-            
-
-            
-
-          </ol>
-
-        </section>
-
-        
-        <!-- <section class="skill">
+          <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -809,252 +773,352 @@
           </ul>
 
         </section> -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Game</button>
-            </li>
-
-            
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Game</button>
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Game</button>
               </li>
 
+              <li class="filter-item">
+                <button data-filter-btn>Artificial intelligence</button>
+              </li>
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-          <ul class="project-list">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#">
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <li class="select-item">
+                  <button data-select-item>Game</button>
+                </li>
 
-                  <img src="./assets/images/homes-vlillas.png" alt="finance" loading="lazy">
-                </figure>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
 
-                <h3 class="project-title">Homes & Villas</h3>
+                <li class="select-item">
+                  <button data-select-item>Artificial intelligence</button>
+                </li>
+              </ul>
+            </div>
 
-                <p class="project-category">Web Development</p>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/LuaanNguyen/social-media-insights">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/insights-engine.jpeg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://luaannguyen.github.io/simple-netflix/">
+                  <h3 class="project-title">
+                    (In progress) Social Media Insights Engine
+                  </h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web Development, Web Design</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/netflix-clone.png" alt="finance" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="artificial intelligence"
+              >
+                <a href="https://github.com/LuaanNguyen/chatbot-chatgpt">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Netflix Clone</h3>
+                    <img
+                      src="./assets/images/openai-nodejs.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Web Development</p>
+                  <h3 class="project-title">Personal Chatbot</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Artificial intelligence</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://luaannguyen.github.io/Airbnb-replica/">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a
+                  href="https://luaannguyen.github.io/marriott-bonvoy-bootstrap-clone/#"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/homes-vlillas.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/airbnb-clone.png" alt="finance" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Homes & Villas</h3>
 
-                <h3 class="project-title">AirBnb Clone</h3>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-                <p class="project-category">Web Development</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://luaannguyen.github.io/simple-netflix/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/netflix-clone.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="game">
-              <a href="https://b7c0c00a-ee15-4855-91dc-f508d9c2049b-00-1pkpcsn82sekg.spock.replit.dev/">
+                  <h3 class="project-title">Netflix Clone</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/hiking-matching-game.png" alt="orizon" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://luaannguyen.github.io/Airbnb-replica/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Hiking Matching Game</h3>
+                    <img
+                      src="./assets/images/airbnb-clone.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Game</p>
+                  <h3 class="project-title">AirBnb Clone</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="game">
-              <a href="https://luaannguyen.github.io/FSE100-final-project/">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game"
+              >
+                <a
+                  href="https://replit.com/@coding-for-web-fall-23/Portfolio-Project-Match-Game-ltnguy58"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/hiking-matching-game.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/fine-motor-skills.png" alt="metaspark" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Hiking Matching Game</h3>
 
-                <h3 class="project-title">Fine Motor Skills</h3>
+                  <p class="project-category">Game</p>
+                </a>
+              </li>
 
-                <p class="project-category">Game</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="game"
+              >
+                <a href="https://luaannguyen.github.io/FSE100-final-project/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/fine-motor-skills.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://luaannguyen.github.io/cowboy-rubs-carpet-calculator/">
+                  <h3 class="project-title">Fine Motor Skills</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Game</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/carpet-warehouse.png" alt="Mealprep Service Website" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a
+                  href="https://luaannguyen.github.io/cowboy-rubs-carpet-calculator/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Cowbot Rob's Custonm Carpet Warehouse</h3>
+                    <img
+                      src="./assets/images/carpet-warehouse.png"
+                      alt="Mealprep Service Website"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Web Design</p>
+                  <h3 class="project-title">
+                    Cowbot Rob's Custom Carpet Warehouse
+                  </h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://83dae1eb-0186-418b-b819-7ef73d866d51-00-3vqa8kg6jrx27.picard.replit.dev/">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a
+                  href="https://83dae1eb-0186-418b-b819-7ef73d866d51-00-3vqa8kg6jrx27.picard.replit.dev/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/the-healthy-mealspot.png"
+                      alt="Mealprep Service Website"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/the-healthy-mealspot.png" alt="Mealprep Service Website" loading="lazy">
-                </figure>
+                  <h3 class="project-title">The Healthy MealSpot</h3>
 
-                <h3 class="project-title">The Healthy MealSpot</h3>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
 
-                <p class="project-category">Web Design</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/purrfect-paws.png"
+                      alt="Salon Website called Purrfect Paws"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+                  <h3 class="project-title">Purrfect Paws</h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
 
-                  <img src="./assets/images/purrfect-paws.png" alt="Salon Website called Purrfect Paws" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Purrfect Paws</h3>
+                    <img
+                      src="./assets/images/personal-portfolio.png"
+                      alt="Personal Portfolio"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <p class="project-category">Web Design</p>
+                  <h3 class="project-title">Personal Portfolio</h3>
 
-              </a>
-            </li>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
 
-            
-            
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/personal-portfolio.png" alt="Personal Portfolio" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Personal Portfolio</h3>
-
-                <p class="project-category">Web Design</p>
-
-              </a>
-            </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <!-- <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
 
                 <figure class="project-img">
@@ -1107,22 +1171,15 @@
 
               </a>
             </li> -->
+            </ul>
+          </section>
+        </article>
 
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <!-- <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -1306,21 +1363,16 @@
 
       </article> -->
 
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <!-- <section class="mapbox" data-mapbox>
+          <!-- <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
@@ -1328,51 +1380,63 @@
           </figure>
         </section> -->
 
-        <section class="contact-form">
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <form action="#" class="form" data-form>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
