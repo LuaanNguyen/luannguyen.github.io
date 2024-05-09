@@ -50,6 +50,8 @@
     hsl(35, 100%, 68%)
   );
 
+  --asu-gradient: linear-gradient(179deg, #7998c, #7905b2, #d57fe6);
+
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
@@ -174,7 +176,21 @@ html {
 }
 
 body {
-  background: var(--smoky-black);
+  background: linear-gradient(133deg, #8c1d40, #ffc627);
+  background-size: 120% 120%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /*-----------------------------------*\
   #PROJECTS
@@ -297,6 +313,12 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar:hover {
+  transform: scale(1.05);
+  /* Change to a different color on hover */
 }
 
 .separator {
@@ -1624,6 +1646,7 @@ textarea.form-input::-webkit-resizer {
 
   .info-content .title {
     padding: 5px 18px;
+    margin: 5px 5px;
   }
 
   .info_more-btn {
@@ -2005,6 +2028,12 @@ textarea.form-input::-webkit-resizer {
     position: relative;
     width: max-content;
     margin: auto;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .main-content:hover {
+    transform: scale(1.05);
+    /* Change to a different color on hover */
   }
 
   /**
@@ -2149,6 +2178,7 @@ textarea.form-input::-webkit-resizer {
     margin-bottom: 0;
     padding-top: 60px;
     z-index: 1;
+    transition: background-color 0.5s, transform 0.5s;
   }
 
   .sidebar-info {
