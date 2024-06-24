@@ -293,7 +293,8 @@ body {
   display: inline-block;
   background: var(--onyx);
   padding: 3px;
-  border-radius: 8px;
+  border-radius: 5px;
+  margin: 3px;
 }
 
 .tech {
